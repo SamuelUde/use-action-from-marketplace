@@ -1,0 +1,12 @@
+name: Python application
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name:Check out code 
+        uses: actions/checkout@v4
+      - name: Python syntax checker
+        uses: cclauss/Find-Python-syntax-errors-action@master	
